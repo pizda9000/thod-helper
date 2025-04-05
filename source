@@ -1,0 +1,105 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))() -- SCRIPT MADE BY M0LWY GUI BY RAYFIELD WEBSITE
+
+local Window = Rayfield:CreateWindow({
+    Name = "sbc thod farmer hub",
+    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+    LoadingTitle = "laoeding???",
+    LoadingSubtitle = "by poem",
+    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+ 
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+ 
+    ConfigurationSaving = {
+       Enabled = false,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Big Hub"
+    },
+ 
+    Discord = {
+       Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+ 
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Untitled",
+       Subtitle = "Key System",
+       Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+ local TpTab = Window:CreateTab("Main tp tab", 0)
+
+ local Tp1Tab = Window:CreateTab("tap tab for popa account", 0)
+
+ local Tp2Tab = Window:CreateTab("tap tab for imsomuchmade account", 0)
+
+ local Button = TpTab:CreateButton({
+    Name = "teleport to arena portal for saeitoshii account",
+    Callback = function()
+workspace["Active Players"].TheSaeItoshii.HumanoidRootPart.CFrame = CFrame.new(239.210938, 22521.9062, -1372.34888, 0.400875032, -1.53251296e-08, 0.916132748, -1.89505585e-08, 1, 2.502032e-08, -0.916132748, -2.73912502e-08, 0.400875032)
+	end,
+})
+
+ local Button = TpTab:CreateButton({
+    Name = "teleport to kill place for saeitoshii account",
+    Callback = function()
+workspace["Active Players"].TheSaeItoshii.HumanoidRootPart.CFrame = CFrame.new(-8253.28809, 10924.0527, 115.278404, 0.00945533067, 5.80768784e-08, 0.999955297, 2.85900859e-10, 1, -5.80821791e-08, -0.999955297, 8.35074287e-10, 0.00945533067)
+	end,
+})
+
+ local Button = TpTab:CreateButton({
+    Name = "teleport to void (to die) for saeitoshii account",
+    Callback = function()
+workspace["Active Players"].TheSaeItoshii.HumanoidRootPart.CFrame = CFrame.new(-9218.3916, 10720.7949, -7868.07031, 0.0793891698, 0.0417356864, 0.995969653, 0.149074435, 0.987390637, -0.0532589816, -0.98563385, 0.152701795, 0.0721664056)
+	end,
+})
+
+ local Button = Tp1Tab:CreateButton({
+    Name = "teleport to arena portal for popa account",
+    Callback = function()
+workspace["Active Players"].popa_anonimys228.HumanoidRootPart.CFrame = CFrame.new(239.210938, 22521.9062, -1372.34888, 0.400875032, -1.53251296e-08, 0.916132748, -1.89505585e-08, 1, 2.502032e-08, -0.916132748, -2.73912502e-08, 0.400875032)
+	end,
+})
+
+ local Button = Tp1Tab:CreateButton({
+    Name = "teleport to kill place for popa account",
+    Callback = function()
+workspace["Active Players"].popa_anonimys228.HumanoidRootPart.CFrame = CFrame.new(-8253.28809, 10924.0527, 115.278404, 0.00945533067, 5.80768784e-08, 0.999955297, 2.85900859e-10, 1, -5.80821791e-08, -0.999955297, 8.35074287e-10, 0.00945533067)
+	end,
+})
+
+ local Button = Tp1Tab:CreateButton({
+    Name = "teleport to void (to die) for popa account",
+    Callback = function()
+workspace["Active Players"].popa_anonimys228.HumanoidRootPart.CFrame = CFrame.new(-9218.3916, 10720.7949, -7868.07031, 0.0793891698, 0.0417356864, 0.995969653, 0.149074435, 0.987390637, -0.0532589816, -0.98563385, 0.152701795, 0.0721664056)
+	end,
+})
+
+ local Button = Tp2Tab:CreateButton({
+    Name = "teleport to arena portal for imsomuchmade account",
+    Callback = function()
+workspace["Active Players"].imsomuchmade.HumanoidRootPart.CFrame = CFrame.new(239.210938, 22521.9062, -1372.34888, 0.400875032, -1.53251296e-08, 0.916132748, -1.89505585e-08, 1, 2.502032e-08, -0.916132748, -2.73912502e-08, 0.400875032)
+	end,
+})
+
+ local Button = Tp2Tab:CreateButton({
+    Name = "teleport to kill place for imsomuchmade account",
+    Callback = function()
+workspace["Active Players"].imsomuchmade.HumanoidRootPart.CFrame = CFrame.new(-8253.28809, 10924.0527, 115.278404, 0.00945533067, 5.80768784e-08, 0.999955297, 2.85900859e-10, 1, -5.80821791e-08, -0.999955297, 8.35074287e-10, 0.00945533067)
+	end,
+})
+
+ local Button = Tp2Tab:CreateButton({
+    Name = "teleport to void (to die) for imsomuchmade account",
+    Callback = function()
+workspace["Active Players"].imsomuchmade.HumanoidRootPart.CFrame = CFrame.new(-9218.3916, 10720.7949, -7868.07031, 0.0793891698, 0.0417356864, 0.995969653, 0.149074435, 0.987390637, -0.0532589816, -0.98563385, 0.152701795, 0.0721664056)
+	end,
+})
+
